@@ -1,0 +1,89 @@
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+ html,
+ body {
+   overflow-x: hidden; /* Prevent scroll on narrow devices */
+ }
+ body {
+   padding-top: 70px;
+ }
+ footer {
+   padding: 30px 0;
+ }
+ .sidebar-offcanvas {
+  position:fixed;
+  top: 100px;
+  /* width: -50%; */
+  right: 30px;
+}
+.sidebar-offcanvas-top{
+  opacity: 0.6;
+  position:fixed;
+  bottom: 30px;
+  /* width: -50%; */
+  right: 33px;
+}
+.sidebar-offcanvas-top:hover{
+  opacity: 1;
+}
+.hover{
+  transition: all 0.3s;
+}
+.hover:hover{
+  
+  box-shadow: 3px 3px 9px #555;
+}
+.nrjz{
+  margin:20px;
+}
+.tx{
+  height: 130px;
+  width: 100px;
+}
+ /*
+  * Off Canvas
+  * --------------------------------------------------
+  */
+ @media screen and (max-width: 767px) {
+   .row-offcanvas {
+     position: relative;
+     -webkit-transition: all .25s ease-out;
+          -o-transition: all .25s ease-out;
+             transition: all .25s ease-out;
+   }
+ 
+   .row-offcanvas-right {
+     right: 0;
+   }
+ 
+   .row-offcanvas-left {
+     left: 0;
+   }
+ 
+   .row-offcanvas-right
+   .sidebar-offcanvas {
+     right: -50%; /* 6 columns */
+   }
+ 
+   .row-offcanvas-left
+   .sidebar-offcanvas {
+     left: -50%; /* 6 columns */
+   }
+ 
+   .row-offcanvas-right.active {
+     right: 50%; /* 6 columns */
+   }
+ 
+   .row-offcanvas-left.active {
+     left: 50%; /* 6 columns */
+   }
+ 
+   .sidebar-offcanvas {
+     position: absolute;
+     top: 0;
+     width: -50%; /* 6 columns */
+   }
+ }
+ 
