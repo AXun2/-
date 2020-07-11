@@ -28,6 +28,11 @@
 .sidebar-offcanvas-top:hover{
   opacity: 1;
 }
+#btnTop {
+    display: none;
+  
+  }
+
 .hover{
   transition: all 0.3s;
 }
